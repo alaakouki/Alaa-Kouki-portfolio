@@ -1,0 +1,319 @@
+:root {
+    --dark-color: #025e73;
+    --orange: #fca311;
+    --light-gray: #eff3f7;
+    --white: #fff;
+    --glowing: #91f2e9;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica, Arial, sans-serif;
+}
+
+/* styling body-header - Heading, Nav bar & BG header image */
+
+.body-header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark-color);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    overflow: hidden; /* added to cover rest of BG-h-img when avoid shrinking or stretching */
+}
+
+
+.Alaa-h-bar {
+    color: var(--white);
+    margin-left: 25px;
+}
+
+.Alaa-h-bar p {
+    text-decoration: underline;
+    text-decoration-color: var(--glowing);
+    text-decoration-thickness: 2px;
+}
+
+
+/* nav-bar style */
+.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-bar li>a {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.nav-bar li>a:hover {
+    color: var(--glowing);
+    padding-bottom: 3px;
+    border-bottom: var(--glowing) 3px solid;
+}
+
+/* END OF : nav-bar style */
+
+
+
+.BG-h-img {
+    object-fit: cover; /* added for stop shrinking or stretching BG-h-img */
+    height: 200px;
+    width: 100%;
+    border-bottom: 6px solid var(--dark-color);
+    z-index: -1;
+}
+
+/* END OF : styling Header - Heading, Nav bar & BG header image */
+
+
+
+/* personal image */
+.white-circle {
+    position: absolute;
+    left: 15%;
+    top: 195px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--white);
+    border: 2px solid var(--dark-color);
+    border-radius: 180px;
+    z-index: 1;
+}
+
+#my-image img {
+    position: absolute;
+    left: 15%;
+    top: 195px;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 180px;
+    border: 6px solid var(--dark-color);
+    z-index: 1;
+}
+
+/* END OF : personal image */
+
+
+
+
+
+/*   --------    ABOVE PERFECT SO FAR    --------   */
+
+
+
+
+
+
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  styling : about me  */
+.UW-about-me {
+    display: flex;
+    align-items: center;
+}
+
+.UW-about-me h2 {
+    width: 270px;
+    height: 300px;
+    background-color: var(--light-gray);
+    border-right: 6px solid var(--dark-color);
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 120px;
+    color: var(--black)
+}
+
+.UW-about-me p {
+    margin-left: 75px;
+    color: var(--black);
+}
+
+/* END OF : styling about me  */
+
+.UW-MYW {
+    display: flex;
+}
+
+.UW-MYW h2 {
+    background-color: var(--light-gray);
+    border-right: 6px solid var(--dark-color);
+    text-align: right;
+    color: var(--black);
+    width: 270px;
+    height: 300px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+
+.pro-img {
+
+    width: 400px;
+    height: 400px;
+
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-1, .project-2, .project-3,
+.project-4, .project-5 {
+    position: relative;
+}
+
+.JavaScript, .sign-up, .tourism,
+.juice-app, .order-page {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--dark-color);
+    color:var(--light-gray);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*
+.UW-MYW-TB {
+    display: flex;
+}
+
+.UW-MYW-TB th {
+    width: 270px;
+    height: 300px;
+    background-color: var(--light-gray);
+    border-right: 6px solid var(--dark-color);
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 0px;
+    color: var(--black)
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 75px;
+}
+
+
+#project-1 {
+    flex: 1 1 50vw;
+}
+
+*/
+
+
+.UW-contact-me {
+    display: flex;
+    /*flex-direction: row;*/
+
+    /*height: 100px;*/
+
+}
+
+
+
+.UW-contact-me h2 {
+    width: 270px;
+    height: 300px;
+    background-color: var(--light-gray);
+    border-right: 6px solid var(--dark-color);
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 120px;
+    color: var(--black)
+}
+
+
+
+.UWCM {
+    display: flex;
+    margin-left: 75px;
+    justify-content: start;
+    flex-wrap: nowrap;
+
+}
+
+.UWCM ul li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.UWCM li>a {
+    color: var(--dark-color);
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--dark-color);
+    text-decoration-thickness: 3px;
+}
+
+.phone {
+    color: var(--dark-color);
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--dark-color);
+    text-decoration-thickness: 3px;
+}
+
+
+/*
+.My-work {
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+*/
+
+
+
+
+/*  styling footer  */
+footer {
+    background-color: var(--dark-color);
+    clear: both;
+    color: var(--light-gray);
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barrier {
+    color: var(--glowing);
+}
+
+/*  END OF : styling footer  */
+
+
+.pro-img>img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.UW-about-me,
+.UW-MYW-TB,
+.projects,
+.UW-contact-me {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
