@@ -1,6 +1,5 @@
 :root {
     --dark-color: #025e73;
-    --orange: #fca311;
     --light-gray: #eff3f7;
     --white: #fff;
     --glowing: #91f2e9;
@@ -102,17 +101,6 @@
 
 
 
-
-
-/*   --------    ABOVE PERFECT SO FAR    --------   */
-
-
-
-
-
-
-
-
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -120,12 +108,11 @@
 
 
 /*  styling : about me  */
-.UW-about-me {
+.about-me {
     display: flex;
-    align-items: center;
 }
 
-.UW-about-me h2 {
+.about-me h2 {
     width: 270px;
     height: 300px;
     background-color: var(--light-gray);
@@ -136,18 +123,24 @@
     color: var(--black)
 }
 
-.UW-about-me p {
+.about-me p {
+    padding-top: 120px;
     margin-left: 75px;
     color: var(--black);
+    line-height: 20px;
 }
 
 /* END OF : styling about me  */
 
-.UW-MYW {
+
+
+/* styling My-work */
+
+.MYW {
     display: flex;
 }
 
-.UW-MYW h2 {
+.MYW h2 {
     background-color: var(--light-gray);
     border-right: 6px solid var(--dark-color);
     text-align: right;
@@ -176,6 +169,7 @@
     position: relative;
 }
 
+
 .JavaScript, .sign-up, .tourism,
 .juice-app, .order-page {
     position: absolute;
@@ -185,58 +179,29 @@
     color:var(--light-gray);
     padding-left: 20px;
     padding-right: 20px;
+    border: 1px solid var(--glowing);
+    border-radius: 5px;
 }
 
+/* END OF : styling My-work */
 
-/*
-.UW-MYW-TB {
+
+/* styling contact-me */
+.contact-me {
     display: flex;
+    justify-content: start;
 }
 
-.UW-MYW-TB th {
+
+
+.contact-me h2 {
     width: 270px;
-    height: 300px;
+    height: 150px;
     background-color: var(--light-gray);
     border-right: 6px solid var(--dark-color);
     text-align: right;
     padding-right: 15px;
-    padding-top: 0px;
-    color: var(--black)
-}
-
-.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 75px;
-}
-
-
-#project-1 {
-    flex: 1 1 50vw;
-}
-
-*/
-
-
-.UW-contact-me {
-    display: flex;
-    /*flex-direction: row;*/
-
-    /*height: 100px;*/
-
-}
-
-
-
-.UW-contact-me h2 {
-    width: 270px;
-    height: 300px;
-    background-color: var(--light-gray);
-    border-right: 6px solid var(--dark-color);
-    text-align: right;
-    padding-right: 15px;
-    padding-top: 120px;
+    padding-top: 15px;
     color: var(--black)
 }
 
@@ -244,16 +209,19 @@
 
 .UWCM {
     display: flex;
-    margin-left: 75px;
-    justify-content: start;
+    margin-left: 0px;
     flex-wrap: nowrap;
+    justify-self: space-between;
 
 }
+
 
 .UWCM ul li {
     display: inline-block;
     list-style: none;
     padding-left: 15px;
+    padding-top: 15px;
+    
 }
 
 .UWCM li>a {
@@ -271,17 +239,7 @@
     text-decoration-color: var(--dark-color);
     text-decoration-thickness: 3px;
 }
-
-
-/*
-.My-work {
-    
-    display: flex;
-    flex-direction: row;
-    
-}
-*/
-
+/* END OF :styling contact-me */
 
 
 
@@ -303,17 +261,12 @@ footer {
 /*  END OF : styling footer  */
 
 
-.pro-img>img {
-    width: 200px;
-    height: 200px;
-}
-
-
-
-.UW-about-me,
-.UW-MYW-TB,
+/*
+.about-me,
+.MYW,
 .projects,
-.UW-contact-me {
+.contact-me {
     border: 1px #ccc solid;
     padding: 10px;
 }
+*/
