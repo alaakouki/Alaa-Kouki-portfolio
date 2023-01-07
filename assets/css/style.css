@@ -163,7 +163,7 @@
 
 .pro-img {
 
-    width: 550px;
+    width: 500px;
     height: 200px;
     border: 2px solid var(--dark-color);
     border-radius: 5px;
@@ -171,7 +171,7 @@
 }
 
 #pro-1-img {
-    width: 1110px;
+    width: 1010px;
     height: 400px;
     margin-bottom: 5px;
 }
