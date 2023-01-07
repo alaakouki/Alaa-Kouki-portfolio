@@ -40,7 +40,6 @@
 
 
 /* nav-bar style */
-
 .nav-bar li {
     list-style: none;
     display: inline-block;
@@ -57,7 +56,6 @@
     padding-bottom: 3px;
     border-bottom: var(--glowing) 3px solid;
 }
-
 /* END OF : nav-bar style */
 
 
@@ -76,33 +74,26 @@
 
 
 /* personal image */
-
-.white-circle {
+.white-circle, #my-image img {
     position: absolute;
     left: 15%;
     top: 195px;
     width: 200px;
     height: 200px;
-    background-color: var(--white);
-    border: 2px solid var(--dark-color);
     border-radius: 180px;
     z-index: 1;
+}
+
+.white-circle {
+    background-color: var(--white);
+    border: 2px solid var(--dark-color);
 }
 
 #my-image img {
-    position: absolute;
-    left: 15%;
-    top: 195px;
-    width: 200px;
-    height: 200px;
     padding: 5px;
-    border-radius: 180px;
     border: 6px solid var(--dark-color);
-    z-index: 1;
 }
-
 /* END OF : personal image */
-
 
 
 .portfolio {
@@ -112,15 +103,12 @@
 
 
 /*  styling : about me  */
-
 .about-me {
     display: flex;
 }
 
 .about-me h2 {
-    /* width: 270px; */
     min-width: 390px;
-    /* max-width: 270px; */
     height: 300px;
     background-color: var(--light-gray);
     border-right: 6px solid var(--dark-color);
@@ -136,13 +124,10 @@
     color: var(--black);
     line-height: 20px;
 }
-
 /* END OF : styling about me  */
 
 
-
 /* styling My-work */
-
 .MYW {
     display: flex;
 }
@@ -152,7 +137,6 @@
     border-right: 6px solid var(--dark-color);
     text-align: right;
     color: var(--black);
-    /* width: 270px; */
     min-width: 390px;
     height: 100%;
     padding-right: 15px;
@@ -160,46 +144,55 @@
 }
 
 
-.pro-img {
-
-    width: 400px;
-    height: 400px;
-
-}
-
 .projects {
     display: flex;
     flex-wrap: wrap;
     margin-left: 75px;
-    /*justify-content: space-between;
-    gap: 10px;*/
 }
 
-.project-1,
-.project-2,
-.project-3,
-.project-4,
+.pro-sec-1 ,.pro-sec-2 {
+    display: flex;
+    
+}
+
+
+.pro-sec-2 {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pro-img {
+
+    width: 550px;
+    height: 200px;
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#pro-1-img {
+    width: 1110px;
+    height: 400px;
+    margin-bottom: 5px;
+}
+
+.project-1, .project-2,
+.project-3, .project-4,
 .project-5 {
 
-    /*flex-grow:0;
-    width: calc(50% - 5px)*/
     position: relative;
     
 }
 
-.project-1 a,
-.project-2 a,
-.project-3 a,
-.project-4 a,
+.project-1 a, .project-2 a,
+.project-3 a, .project-4 a,
 .project-5 a {
     text-decoration: none;
     color: var(--light-gray);
 }
 
-.JavaScript,
-.sign-up,
-.tourism,
-.juice-app,
+.JavaScript, .sign-up,
+.tourism, .juice-app,
 .order-page {
     position: absolute;
     bottom: 20px;
@@ -211,15 +204,13 @@
     border-radius: 5px;
     line-height: 23px;
 }
-
 /* END OF : styling My-work */
+
 
 
 /* styling contact-me */
 .contact-me {
     display: flex;
-    /*justify-content: start;*/
-    /* added by Kayla */
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
@@ -228,7 +219,6 @@
 
 
 .contact-me h2 {
-    /* width: 270px; */
     min-width: 390px;
     height: 150px;
     background-color: var(--light-gray);
@@ -242,8 +232,6 @@
 
 
 .UWCM {
-    /* Kayla commented out */
-    /*display: flex;*/
     margin-left: 0px;
     flex-wrap: nowrap;
     justify-self: space-between;
@@ -252,7 +240,6 @@
 }
 
 
-/* added by Kayla*/
 .UWCM ul {
     display: flex;
     flex-wrap: wrap;
@@ -267,28 +254,15 @@
 .UWCM ul li {
     display: inline-block;
     list-style: none;
-    /* Kayla commented out */
-    /*padding-left: 15px;
-    padding-top: 15px;*/
-
 }
 
-.UWCM li>a {
+.UWCM li>a, .phone {
     color: var(--dark-color);
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: var(--dark-color);
     text-decoration-thickness: 3px;
 }
-
-.phone {
-    color: var(--dark-color);
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: var(--dark-color);
-    text-decoration-thickness: 3px;
-}
-
 /* END OF :styling contact-me */
 
 
@@ -296,7 +270,6 @@
 /*  styling footer  */
 footer {
     background-color: var(--dark-color);
-    /*clear: both;*/
     color: var(--light-gray);
     height: 75px;
     display: flex;
@@ -308,9 +281,7 @@ footer {
 .barrier {
     color: var(--glowing);
 }
-
 /*  END OF : styling footer  */
-
 
 
 
@@ -318,11 +289,13 @@ footer {
 /* Media queries codes for responsive layout */
 
 
-/* media query to change the width for ipads & desktop screen */
-@media screen and (min-width: 768px) and (max-width: 992px) {
 
-#about-me-heading {
-    max-width: 200px;
+/* media query to change the width for ipads & desktop screen */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+#about-me-heading, #MYW-heading,
+#contact-me-heading {
+    min-width: 215px;
 }
 
 
@@ -336,29 +309,28 @@ footer {
 
     }
 
-    /*
+    .pro-sec-2 {
+        gap: 5px;
+    }
+
     .pro-img {
-        width: 550px;
+
+        width: 320px;
         height: 150px;
-        margin-top: 5px;
         border: 2px solid var(--dark-color);
         border-radius: 5px;
         object-fit: cover;
+        
     
     }
     
     #pro-1-img {
-    
-        width: 550px;
-        height: 400px;
-    
+        width: 645px;
+        height: 300px;
+        margin-bottom: 5px;
     }
-*/
 
 }
-
-
-
 
 
 /* media query to change the width at 768px or smaller */
@@ -381,7 +353,6 @@ footer {
 
 
     /* personal image */
-
     .white-circle {
         position: absolute;
         left: 40%;
@@ -405,11 +376,10 @@ footer {
         border: 3px solid var(--dark-color);
         z-index: 1;
     }
-
     /* END OF : personal image */
 
 
-    /*  styling : headings and about me paragraph */
+/*  styling : headings and about me paragraph */
 .about-me {
     display: flex;
     flex-direction: column;
@@ -418,6 +388,7 @@ footer {
 #about-me-heading,
 #MYW-heading,
 #contact-me-heading {
+    width: 100%;
     margin-top: 100px;
     padding-top: 5px;
     height: 75px;
@@ -433,7 +404,6 @@ footer {
     color: var(--black);
     line-height: 25px;
 }
-
 /* END OF : styling : headings and about me paragraph */
 
 
@@ -444,6 +414,7 @@ footer {
 
 .projects {
     padding-top: 40px;
+    margin-left: 10%;
 }
 
 
@@ -456,45 +427,34 @@ footer {
 .tourism,
 .juice-app,
 .order-page {
-
     box-shadow: 2px 2px 5px var(--dark-color);
-
 }
 
 
 .pro-img {
 
-    width: 550px;
-    height: 150px;
+    width: 400px;
+    height: 100px;
     margin-top: 5px;
     border: 2px solid var(--dark-color);
     border-radius: 5px;
     object-fit: cover;
-
 }
+
 
 #pro-1-img {
 
-    width: 550px;
-    height: 400px;
-
+    width: 400px;
+    height: 250px;
 }
-
 /* END OF : styling My-work / projects - for Media query */
 
 
 /* styling contact-me - for Media query */
-
 .contact-me {
     flex-direction: column;
-    /* align-items:center; */
 }
 
-#contact-me-heading {
-    /* align-self: stretch; */
-    /* flex: 0 0 100%; */
-    /* flex-basis: 100%; */
-}
 
 .UWCM ul {
     margin-top: 25px;
@@ -503,11 +463,6 @@ footer {
 
 .UWCM ul li {
     display: block;
-}
-
-.contact-me-heading {
-    /* align-self: stretch; */
-    /* align-self: center; */
 }
 
 /* END OF : styling contact-me - for Media query */
